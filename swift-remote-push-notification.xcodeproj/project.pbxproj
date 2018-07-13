@@ -13,9 +13,11 @@
 		78FAC7D920F4E393001B1868 /* swift_remote_push_notification.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78FAC7D720F4E393001B1868 /* swift_remote_push_notification.xcdatamodeld */; };
 		78FAC7DB20F4E394001B1868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78FAC7DA20F4E394001B1868 /* Assets.xcassets */; };
 		78FAC7DE20F4E394001B1868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FAC7DC20F4E394001B1868 /* LaunchScreen.storyboard */; };
+		9829B0C84A8AEBD4BFBC192F /* Pods_swift_remote_push_notification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB6A1BEAFFAC956F4B8B4EB /* Pods_swift_remote_push_notification.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60BACF5A8C6EE6030E6A1B30 /* Pods-swift-remote-push-notification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-remote-push-notification.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-remote-push-notification/Pods-swift-remote-push-notification.debug.xcconfig"; sourceTree = "<group>"; };
 		78FAC7CD20F4E393001B1868 /* swift-remote-push-notification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-remote-push-notification.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FAC7D020F4E393001B1868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78FAC7D220F4E393001B1868 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		78FAC7DA20F4E394001B1868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78FAC7DD20F4E394001B1868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78FAC7DF20F4E394001B1868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9948851AC0CAE06A353B287F /* Pods-swift-remote-push-notification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-remote-push-notification.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-remote-push-notification/Pods-swift-remote-push-notification.release.xcconfig"; sourceTree = "<group>"; };
+		DBB6A1BEAFFAC956F4B8B4EB /* Pods_swift_remote_push_notification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_remote_push_notification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9829B0C84A8AEBD4BFBC192F /* Pods_swift_remote_push_notification.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		177C061E4520E14BD139D0AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBB6A1BEAFFAC956F4B8B4EB /* Pods_swift_remote_push_notification.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		78FAC7C420F4E393001B1868 = {
 			isa = PBXGroup;
 			children = (
 				78FAC7CF20F4E393001B1868 /* swift-remote-push-notification */,
 				78FAC7CE20F4E393001B1868 /* Products */,
+				E74A13CEFEAC5874CABBE7F5 /* Pods */,
+				177C061E4520E14BD139D0AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = "swift-remote-push-notification";
 			sourceTree = "<group>";
 		};
+		E74A13CEFEAC5874CABBE7F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60BACF5A8C6EE6030E6A1B30 /* Pods-swift-remote-push-notification.debug.xcconfig */,
+				9948851AC0CAE06A353B287F /* Pods-swift-remote-push-notification.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78FAC7E220F4E394001B1868 /* Build configuration list for PBXNativeTarget "swift-remote-push-notification" */;
 			buildPhases = (
+				FFB211064DB58B51C22515D7 /* [CP] Check Pods Manifest.lock */,
 				78FAC7C920F4E393001B1868 /* Sources */,
 				78FAC7CA20F4E393001B1868 /* Frameworks */,
 				78FAC7CB20F4E393001B1868 /* Resources */,
+				A51DC595FEA3DC4BA1DBEC1B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A51DC595FEA3DC4BA1DBEC1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-swift-remote-push-notification/Pods-swift-remote-push-notification-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-remote-push-notification/Pods-swift-remote-push-notification-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFB211064DB58B51C22515D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swift-remote-push-notification-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		78FAC7C920F4E393001B1868 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		78FAC7E320F4E394001B1868 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60BACF5A8C6EE6030E6A1B30 /* Pods-swift-remote-push-notification.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		78FAC7E420F4E394001B1868 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9948851AC0CAE06A353B287F /* Pods-swift-remote-push-notification.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
